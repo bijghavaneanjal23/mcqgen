@@ -10,7 +10,7 @@ from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
 from src.mcqgenerator.logger import logging
 from langchain_community.chat_models import ChatOpenAI
 
-with open('G:\gen ai project\mcqgen\Response.json','r') as file:
+with open('Response.json','r') as file:
     RESPONSE_JSON=json.load(file)
 
 st.title("MCQ Creator Application with Langchain")
