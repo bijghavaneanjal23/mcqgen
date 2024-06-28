@@ -34,7 +34,7 @@ if button and uploaded_file is not None and mcq_count and subject and tone:
                     text = read_file(uploaded_file)
                     # call the llm while getting the token metrics
                     with get_openai_callback() as cb:
-                        response=generate_and_evaluate_quiz(
+                        response=generate_evaluate_chain(
                             {
                                 "text": text,
                                 "number": mcq_count,
